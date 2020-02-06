@@ -1,0 +1,17 @@
+1.初始化版本库 git init
+2.添加文件到版本库 git add .(提交至暂存区)
+                  git commit (提交至本地仓库)
+3.查看本地仓库状态 git status
+4.只add 没有commit 时候回滚
+ git reset HEAD 、、、(eg.bash_demo.txt) 回归到上一个状态
+ git checkout bash --bash_demo.txt
+5.既add. 又 commit时候回滚
+ git log (拿出commit号)
+ git reset --hard (copy的commit号) 
+ 此时，这个commit号的提交就被撤回了，回滚完毕
+6.当产品变更(紧急需求)时，需要把本地仓库清理干净
+  git rm bash_demo.txt
+  git status
+  git commit -m '......'
+  git status (....clean)
+   

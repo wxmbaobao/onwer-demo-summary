@@ -1,0 +1,31 @@
+******远程仓库之创建SSH key
+1.在GitHub上 settings
+   SSH keys(侧边栏)
+   点击 New SSHkey
+   title:写一个标题，eg:wxm-demo1
+   key :[
+
+       这个key待会复制进来
+
+   ]
+2.在git bash 命令行中输入以下命令：
+(1)cd ~/.ssh
+(2)ssh-keygen -t rsa -C "email@email.com"
+(3)跟着按enter键，y就行
+(4) cd ~
+(5)pwd
+(6) cd .ssh/
+(7) ll
+(8) cat id_rsa.pub（需要的公钥是...pub这个）
+  [
+      ssh......
+      .........
+      .........
+  ]
+(9)copy以上的 [
+      ssh......
+      .........
+      .........
+  ]，到GitHub里第一步的key中
+(10)然后点击add按钮
+(11)ssh -T git@github.com (判断本地与远程是否连接上了)

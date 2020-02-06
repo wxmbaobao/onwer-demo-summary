@@ -1,0 +1,35 @@
+1.在master分支上创建并打开新的分支
+方法(1):
+git checkout -b feature_x
+方法(2):
+git branch feature_x
+git branch (查看分支)
+git checkout feature_x
+(本人更倾向于方法1)
+
+2.在新的分支 feature_x中修改代码
+  git add .
+  git commit -m '......'
+  git push
+
+3.把 feature_x的代码 merge 到 master 分支
+  git checkout master 
+  git merge feature_x
+  即把 feature_x代码新的功能合并到master上了
+
+  这里展开说下：
+  (1)如果现在在A分支，想把A分支代码合并到B分支上
+  git checkout B
+  git merge A
+  (2)在实际工作过程我会经常遇到两种情况
+   a:自己切了分支 feature_x,主分支是master，此时要把 feature_x合并到master，即
+     git checkout master 
+     git merge feature_x
+   b:与别人共同开发一个项目，别人已经推送代码到master上，此时我的分支 feature_x分支要与 master 同步，即
+   把master代码所有功能合并到自己的分支 feature_x
+     git checkout feature_x
+     git merge master
+   (3)公司有gitlab的话，直接线上操作也行
+
+4.当发现 feature_x 分支没用了，要删除该分支
+  git branch -d feature_x

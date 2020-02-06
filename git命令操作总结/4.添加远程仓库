@@ -1,0 +1,14 @@
+1.在GitHub上公钥已经创建，故创建新的仓库
+点击 New respository
+2.写自己的仓库名字(Respository name) eg:wxm-demo1
+然后正常不用修改参数，点击创建即可
+3.进入自己的工作目录
+  cd ......
+  以下(1)到(5)直接是在github 直接复制来的
+  (1)复制 echo'...' >>README.md
+  (2)复制 git init (初始化git仓库)
+  (3)复制 git add .....(存在暂存区)
+  (4)复制 git commit ......(添加到了master分支版本目录树中)
+  (5)复制 git remote .......(本地仓库与远程仓库关联起来)
+  (6)git push -u origin master(推到origin远程仓库，第一次push要这样，之后直接 git push 命令即可)
+  (7)github页面刷新下：有 README.md 文件夹

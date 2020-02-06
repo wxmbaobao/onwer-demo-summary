@@ -1,0 +1,5 @@
+1.下载 window git
+  网址：https://git-scm.com/download/win
+2.配置用户信息
+ git config --global user.name"wxm"
+ git config --global user.email"...@163.com"

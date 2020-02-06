@@ -1,0 +1,7 @@
+1.git clone git@......git
+2.pwd
+3.cd进入克隆的文件夹(切记！！！！！！)
+4.用vscode打开此文件夹，修改代码，保存下
+5.git add .
+  git commit -m 'first commit'
+  git push -u(****第一次提交要这样，不过敲 git push ，git命令行会直接提示....,然后复制了提交就行)
