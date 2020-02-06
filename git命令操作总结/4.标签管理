@@ -1,0 +1,6 @@
+1.查看所有标签 git tag
+2.创建标签 git tag name
+3.指定提交信息 git tag -a name -m 'comment'
+4.删除标签 git tag -d name
+5.标签发布 git push origin name 
+(其实这个我不常用，记录一下，防止以后用的着)
